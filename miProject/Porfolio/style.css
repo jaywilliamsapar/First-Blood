@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.main .circle{
+    width: 230px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-right: 80px;
+    background: #6debe0;
+}
+.main .circle-1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background: #6debe0;
+    bottom: 0;
+    margin-left: 60px;
+    margin-bottom: -30px;
+}
+.main .section{
+    width: 80%;
+    height: 80%;
+    margin-left: 130px;
+    margin-top: 60px;
+    position: absolute;
+    overflow: hidden;
+    background: rgb(24, 24, 24);
+    box-shadow: 8px 8px 15px 0 rgba(51, 233, 187, 0.7), -8px -8px 15px 0 rgba(51, 233, 187, 0.7);
+}
+.main .section nav{
+    width: 100%;
+    height: 60px;
+}
+.main .section nav .logo{
+    font-size: 40px;
+    line-height: 60px;
+    padding: 40px;
+    color: khaki;
+    position: absolute;
+}
+.main .section nav ul {
+    float: right;
+    margin-right: 70px;
+}
+.main .section nav ul li {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+    line-height: 60px;
+}
+.main .section nav ul li a{
+    color: grey;
+}
+h3{
+    color: rgb(209, 57, 184);
+}
+.main .section nav ul li:hover{
+    background: #6b43db;
+    border-radius: 30px;
+}
+.main .section nav ul .btn{
+    width: 130px;
+    height: 50px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 18px;
+}
+.main .section nav ul .btn:hover{
+    background: #c03652;
+}
+.main .section .intro{
+    padding-left: 40px;
+    color:white;
+}
+.main .section .intro img{
+    width:500px;
+    height: 60vh;
+    float: right;
+    margin-right: 40px;
+    margin-top: 65px;
+    position: relative;
+}
+.main .section .intro .heading{
+    padding-top: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.main .section .intro h1{
+    font-weight: bold;
+    font-size: 60px;
+    padding-bottom: 17px;
+}
+.main .section .intro p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.main .section .intro h3{
+    padding-bottom: 18px;
+}
+.main .section .intro i{
+    color: #6b43db;
+    font-size: 2.2rem;
+    margin-left: 5px;
+    border-top: 200px;
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+}
+.main .section .intro .in-btn{
+    width: 150px;
+    height: 50px;
+    background: #c03652;
+    border: 3px solid;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.main .section .intro .in-btn:hover{
+    color: rgb(0, 255, 76);
+}
+.main .section .intro .btn-1{
+    width: 150px;
+    height: 50px;
+    background: #c03652;
+    border: 3px solid;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+}
+.main .section .intro .btn-1:hover{
+    color: rgb(0, 255, 76);
+}
+.main .section .intro .circle-2{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -120px;
+    left: 35%;
+    background: #6b43db;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+.main .section .intro .circle-3{
+    width: 500px;
+    height: 370px;
+    position: absolute;
+    background: #6b43db;
+    right: 60px;
+    border-radius: 50%;
+}
+.bubbles img{
+    width: 30px;
+    animation: bubble 7s linear infinite;
+
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        
+        opacity: 1;
+    }
+    70% {
+        
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    } 
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 30px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 55px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 45px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.3s;
+    width: 20px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width: 38px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 47px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 27px;
+}
+.wrapper h1{
+    margin: 0;
+    line-height: 1;
+    font-size: 3.75em;
+    color: transparent;
+    background-image: linear-gradient(to left, rgb(191, 11, 236), rgb(88, 247, 220),rgb(231, 49, 49),rgb(86, 209, 70),rgb(88, 53, 214));
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+
+}
+@keyframes animate{
+    0% {
+        background-position: 0 100%;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
